@@ -492,7 +492,9 @@ public class SpratDisplayPanel extends javax.swing.JPanel {
         expLengthField.setText(extractInt(data, "Exposure Length"));
         /*"Exposure Start Time",new Long(exposureStartTime.getTime()));
          "Exposure Start Time Date",exposureStartTime);*/
-
+        String  expstart = extract(data, "Exposure Start Time");
+        expStartField.setText(expstart);
+        
         slitStateField.setText(extract(data, "Slit.Position.String"));
         grismStateField.setText(extract(data, "Grism.Position.String"));
         rotationStateField.setText(extract(data, "Mirror.Position.String"));
